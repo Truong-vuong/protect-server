@@ -3,7 +3,7 @@ import { H3Event } from "h3";
 
 export default defineEventHandler(async (event: H3Event) => {
   const query: any = getQuery(event);
-  console.log(query)
+  // console.log(query)
   try {
     if (query.user != 1) {
       await protectRouters(query.rank);
